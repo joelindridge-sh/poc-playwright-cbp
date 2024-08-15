@@ -1,0 +1,24 @@
+# https://help.github.com/articles/ignoring-files/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Cypress test run files
+/playwright/reports/
+/playwright/artifacts/
+# downloads?
+# outputs?
+
+# VSCode settings
+.vscode

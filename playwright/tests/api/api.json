@@ -1,0 +1,32 @@
+[
+  {
+    "method": "GET",
+    "endpoint": "/",
+    "parameters": {},
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "endpoint": "/a-b/health-plans",
+    "parameters": { "cid": "9518" },
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "endpoint": "/a-b/health-plans#product",
+    "parameters": { "cid": "9518" },
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "endpoint": "/products/consumers/simplyhealth/cp/about-you",
+    "parameters": { "level": "4", "partner": "true", "children": "2" },
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "endpoint": "/products/consumers/simplyhealth/cp/date-of-birth",
+    "parameters": {},
+    "status": 200
+  }
+]
