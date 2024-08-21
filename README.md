@@ -10,9 +10,9 @@ See also [poc-playwright-cucumber-cbp](https://github.com/joelindridge-sh/poc-pl
 
 The same test is written in three styles for comparison:
 
-- Without functions - [playwright/tests/pure](playwright\tests\pure)
-- With functions - [playwright/tests/withFunctions](playwright\tests\withFunctions)
-- With [steps](https://playwright.dev/docs/api/class-test#test-step) - [playwright/tests/withSteps](playwright\tests\withSteps)
+- Without functions - [playwright/tests/pure](playwright/tests/pure/contact-us.spec.ts)
+- With functions - [playwright/tests/withFunctions](playwright/tests/withFunctions/contact-us.spec.ts)
+- With [steps](https://playwright.dev/docs/api/class-test#test-step) - [playwright/tests/withSteps](playwright/tests/withSteps/contact-us.spec.ts)
 
 ## Installation
 
