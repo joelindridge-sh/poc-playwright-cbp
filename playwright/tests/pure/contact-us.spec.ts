@@ -4,8 +4,8 @@ test.beforeEach(async ({ page }) => {
   // Given I am logged in as a broker
   await page.goto("https://green-pond-004309e03-982.westeurope.azurestaticapps.net/corporate-portal/");
   await page.locator("#onetrust-accept-btn-handler").click();
-  await page.locator('[name="username"]').fill("e4a1b5a3-eacc-4a85-a685-1175290c11f5@mailslurp.com");
-  await page.locator('[name="password"]').fill("Password@1");
+  await page.locator('[name="username"]').fill(process.env["cognito-broker-username"]);
+  await page.locator('[name="password"]').fill(process.env["cognito-broker-password"]);
   await page.locator("button").getByText("Sign in").click();
   await page.getByTestId("AgreeTermsOfUse_Button").click();
   await expect(page.locator("h1", { hasText: "Welcome" })).toBeVisible();

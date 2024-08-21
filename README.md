@@ -22,6 +22,19 @@ Dependencies can then be installed via the following command:
 
 `npm i`
 
+### Environment
+
+This project makes use of [dotenv](https://github.com/motdotla/dotenv) to load environment variables, containing login details.
+
+Add and ammend the following file to the root of the project:
+
+`.env`
+
+```properties
+cognito-broker-username = "xxxxxxxxx"
+cognito-broker-password = "xxxxxxxxx"
+```
+
 ## VSCode
 
 VSCode has a Playwright extension providing useful functionality such as running tests and picking locators.
