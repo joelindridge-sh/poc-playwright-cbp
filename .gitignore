@@ -14,9 +14,9 @@ node_modules/
 # Optional npm cache directory
 .npm
 
-# Cypress test run files
+# Playwright test run files
 /playwright/reports/
-/playwright/artifacts/
+/playwright/output/
 # downloads?
 # outputs?
 

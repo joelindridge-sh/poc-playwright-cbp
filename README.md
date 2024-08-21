@@ -1,8 +1,18 @@
-# poc-playwright
+# poc-playwright-cbp
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-A POC for using [Playwright](https://playwright.dev/docs/intro).
+A POC for using [Playwright](https://playwright.dev/docs/intro) for the Corporate Broker Portal.
+
+See also [poc-playwright-cucumber-cbp](https://github.com/joelindridge-sh/poc-playwright-cucumber-cbp).
+
+##
+
+The same test is written in three styles for comparison:
+
+- Without functions - [playwright\tests\pure](playwright\tests\pure)
+- With functions - [playwright\tests\withFunctions](playwright\tests\withFunctions)
+- With [steps](https://playwright.dev/docs/api/class-test#test-step) - [playwright\tests\withSteps](playwright\tests\withSteps)
 
 ## Installation
 
@@ -45,7 +55,7 @@ Run all - runs all of the tests in the command line:
 `npx playwright test`
 
 Run a tag - runs a subset of tests tagged in feature files:
-`npx playwright test --grep "@api"`
+`npx playwright test --grep "@ui"`
 
 Run headed - runs tests in the browser:
 `npx playwright test --grep "@ui" --headed`

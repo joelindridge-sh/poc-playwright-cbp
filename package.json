@@ -2,9 +2,10 @@
   "devDependencies": {
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.12.7",
+    "aws-amplify": "^5.3.21",
     "prettier": "^3.2.5"
   },
   "prettier": {
-    "printWidth": 200
+    "printWidth": 120
   }
 }
