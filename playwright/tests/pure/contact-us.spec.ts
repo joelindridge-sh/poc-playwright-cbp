@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
   // Given I am logged in as a broker
-  await page.goto("https://green-pond-004309e03-982.westeurope.azurestaticapps.net/corporate-portal/");
+  await page.goto(".");
   await page.locator("#onetrust-accept-btn-handler").click();
   await page.locator('[name="username"]').fill(process.env["cognito-broker-username"]);
   await page.locator('[name="password"]').fill(process.env["cognito-broker-password"]);

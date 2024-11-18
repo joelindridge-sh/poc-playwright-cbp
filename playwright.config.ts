@@ -21,6 +21,8 @@ export default defineConfig({
   reporter: [["html", { outputFolder: "playwright/reports" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    // Base URL to use in actions like `await page.goto('/')`.
+    baseURL: "http://localhost:3000/corporate-portal/",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
     // launchOptions: {
