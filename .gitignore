@@ -11,6 +11,9 @@ node_modules/
 # TypeScript cache
 *.tsbuildinfo
 
+# Environment file
+.env
+
 # Optional npm cache directory
 .npm
 
